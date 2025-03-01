@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.loginSignUp{
+    height: 15rem;
+    width: 25rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loginSignUp a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    width: 10rem;  
+    height: 2rem;  
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.signUp{
+    width: 30rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+form{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+input{
+     width: 25rem;
+     font-size: 1rem;
+     border-radius: .5rem;
+     padding: 0.4rem 0rem 0.4rem 0.4rem; 
+     margin-bottom:1rem;
+}
+
+button{
+    width: 25rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: .5rem;
+    padding:0.4rem 0rem;
+    margin:1rem 0rem;
+    background-color: red;
+    color:#fff;
+    border: .1rem solid red;
+    cursor: pointer;
+}
+
+
+.container {
+    width: 20rem;
+    margin: 7rem auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container button{
+   width: 5rem;
+}
+.error{
+    color: red;
+}
+

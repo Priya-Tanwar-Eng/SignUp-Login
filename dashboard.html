@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="container">
+        <h2>Welcome to the Dashboard</h2>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script>
+        function logout() {
+            localStorage.removeItem('loggedInUser');
+            window.location.href = "./Login.html";
+        }
+
+        // Check if user is logged in
+        if (!localStorage.getItem('loggedInUser')) {
+            window.location.href = "./Login.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp page</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="signUp">
+        <h1>Sign-Up</h1>
+        <form id="signUpForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email..." required/>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Your Password..." minlength="8" maxlength="12" required>
+            <label for="number">Number</label>
+            <input type="text" id="number" value="+91" minlength="13" maxlength="13" required/>
+            <button type="submit" >Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="./Login.html">Login</a></p>
+        <p id="signUpError" class="error"></p>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
