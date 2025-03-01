@@ -1,15 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f5f5f5;
 }
 
 #bg-video {
@@ -22,8 +23,8 @@ body{
     z-index: -1; 
 }
 
-.loginSignUp{
-    height: 15rem;
+.loginSignUp {
+    max-width: 90%;  
     width: 25rem;
     background-color: #fff;
     border-radius: 1rem;
@@ -31,29 +32,29 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-.loginSignUp a{
+.loginSignUp a {
     text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-    width: 10rem;  
-    height: 2rem;  
-    background-color: blue;
     color: white;
+    cursor: pointer;
+    width: 10rem;
+    height: 2rem;
+    background-color: blue;
     font-size: 1.2rem;
     border: none;
     border-radius: 1rem;
     margin-top: 1rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.signUp{
+.signUp {
+    max-width: 90%;
     width: 30rem;
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,38 +62,40 @@ body{
     background-color: #fff;
     padding: 1rem;
     border-radius: 1rem;
-}
-form{
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  flex-direction: column;
-  font-size: 1.2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-input{
-     width: 25rem;
-     font-size: 1rem;
-     border-radius: .5rem;
-     padding: 0.4rem 0rem 0.4rem 0.4rem; 
-     margin-bottom:1rem;
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    width: 100%;
 }
 
-button{
-    width: 25rem;
-    text-align: center;
+input {
+    width: 100%;
     font-size: 1rem;
     border-radius: .5rem;
-    padding:0.4rem 0rem;
-    margin:1rem 0rem;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: .5rem;
+    padding: 0.6rem;
+    margin: 1rem 0rem;
     background-color: red;
-    color:#fff;
+    color: #fff;
     border: .1rem solid red;
     cursor: pointer;
 }
 
-
 .container {
+    max-width: 90%;
     width: 20rem;
     margin: 7rem auto;
     padding: 20px;
@@ -105,10 +108,42 @@ button{
     align-items: center;
 }
 
-.container button{
-   width: 5rem;
-}
-.error{
-    color: red;
+.container button {
+    width: 100%;
 }
 
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .loginSignUp {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .signUp {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    form {
+        font-size: 1rem;
+    }
+
+    input, button {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .loginSignUp {
+        width: 80%;
+    }
+
+    .signUp {
+        width: 80%;
+    }
+}
